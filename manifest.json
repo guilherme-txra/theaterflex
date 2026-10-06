@@ -1,13 +1,54 @@
 {
   "manifest_version": 3,
-  "name": "TheaterFlex",
-  "version": "1.0",
-  "description": "Modo teatro do YouTube",
+  "name": "TheaterFlex - Modo Teatro Imersivo para YouTube",
+  "version": "1.1.0",
+  "description": "Modo teatro imersivo ocupando 100% da janela sem perder abas, com barra inteligente e rolagem livre.",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "TheaterFlex"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-extension": {
+      "suggested_key": {
+        "default": "Alt+Shift+T",
+        "mac": "Alt+Shift+T"
+      },
+      "description": "Alternar o modo TheaterFlex"
+    }
+  },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "theaterflex@open-source",
+      "strict_min_version": "109.0"
+    }
+  }
 }

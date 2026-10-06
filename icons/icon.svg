@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="tfRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2222"/>
+      <stop offset="100%" stop-color="#CC0000"/>
+    </linearGradient>
+    <filter id="tfGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo Dark Squircle -->
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="#0F0F0F" stroke="#FF1A1A" stroke-width="3"/>
+
+  <!-- Moldura do Monitor -->
+  <rect x="22" y="28" width="84" height="54" rx="8" fill="#1C1C1C" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <!-- Botão Play Central com Glow -->
+  <circle cx="64" cy="55" r="17" fill="url(#tfRedGrad)" filter="url(#tfGlow)"/>
+  <polygon points="60,46 60,64 74,55" fill="#FFFFFF"/>
+
+  <!-- Setas de Expansão nos 4 cantos -->
+  <!-- Top-Left -->
+  <path d="M 28 42 L 28 34 L 36 34 M 28 34 L 38 44" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top-Right -->
+  <path d="M 100 42 L 100 34 L 92 34 M 100 34 L 90 44" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom-Left -->
+  <path d="M 28 68 L 28 76 L 36 76 M 28 76 L 38 66" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom-Right -->
+  <path d="M 100 68 L 100 76 L 92 76 M 100 76 L 90 66" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Suporte / Base do Monitor -->
+  <rect x="59" y="82" width="10" height="16" fill="#505050"/>
+  <rect x="44" y="96" width="40" height="5" rx="2.5" fill="url(#tfRedGrad)"/>
+</svg>
