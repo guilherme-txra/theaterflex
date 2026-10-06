@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TheaterFlex - Modo Teatro Imersivo para YouTube",
   "version": "1.1.0",
-  "description": "Modo teatro imersivo ocupando 100% da janela sem perder abas, com barra inteligente e rolagem livre.",
+  "description": "O Modo Teatro Imersivo definitivo para o YouTube: 100% da janela, navegação inteligente e zero distrações.",
   "permissions": [
     "storage"
   ],
