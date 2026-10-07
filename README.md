@@ -29,6 +29,10 @@ O **TheaterFlex** resolve isso de forma elegante:
 3. **Barra Superior Inteligente:** A barra de busca e navegação do YouTube fica oculta para imersão total e reaparece suavemente ao aproximar o mouse do topo ou ao focar no campo de busca.
 4. **Rolagem Livre:** Role a página a qualquer momento para ler os comentários ou ver a descrição do vídeo sem sair do modo imersivo.
 
+### Demonstração da extensão
+<p align="center">
+  <img src="assets/theaterflex.gif" width="700" alt="Demonstração da extensão">
+</p>
 ---
 
 ## ⚡ Antes vs Depois
