@@ -62,7 +62,7 @@ O **TheaterFlex** resolve isso de forma elegante:
 ### No Google Chrome / Brave / Microsoft Edge / Opera:
 1. Clone este repositório ou baixe o arquivo ZIP e extraia-o em seu computador:
    ```bash
-   git clone https://github.com/SEU-USUARIO/theaterflex.git
+   git clone https://github.com/guilherme-txra/theaterflex.git
    ```
 2. Abra seu navegador e acesse a página de extensões:
    - Chrome: `chrome://extensions`
